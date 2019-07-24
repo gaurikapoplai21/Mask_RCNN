@@ -90,6 +90,7 @@ class BalloonDataset(utils.Dataset):
         self.add_class("balloon", 1, "balloon")
 
         # Train or validation dataset?
+        dataset_dir = ROOT_DIR
         assert subset in ["train", "val"]
         dataset_dir = os.path.join(dataset_dir, subset)
 
