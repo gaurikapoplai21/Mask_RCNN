@@ -35,7 +35,7 @@ import numpy as np
 import skimage.draw
 
 # Root directory of the project
-ROOT_DIR = os.path.abspath("/root/Mask_RCNN/dataset/images")
+ROOT_DIR = os.path.abspath("/root/Mask_RCNN/dataset")
 
 # Import Mask RCNN
 sys.path.append(ROOT_DIR)  # To find local version of the library
@@ -90,7 +90,7 @@ class BalloonDataset(utils.Dataset):
         self.add_class("balloon", 1, "balloon")
 
         # Train or validation dataset?
-        dataset_dir = ROOT_DIR
+        
         assert subset in ["train", "val"]
         dataset_dir = os.path.join(dataset_dir, subset)
 
