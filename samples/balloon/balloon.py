@@ -35,7 +35,7 @@ import numpy as np
 import skimage.draw
 
 # Root directory of the project
-ROOT_DIR = os.path.abspath("/root/Mask_RCNN/dataset")
+ROOT_DIR = os.path.abspath("/root/Mask_RCNN/dataset/images")
 
 # Import Mask RCNN
 sys.path.append(ROOT_DIR)  # To find local version of the library
